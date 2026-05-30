@@ -38,6 +38,8 @@ jobs:
           key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
           restore-keys: |
             ${{ runner.os }}-plugins-
+      - name: Fix quartz permissions
+        run: chmod +x ./quartz/bootstrap-cli.mjs
       - name: Install Dependencies
         run: npm ci
       - name: Install Quartz plugins
