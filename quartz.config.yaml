@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: plerks.github.io
+  baseUrl: plerks.github.io/ai-notes/
   ignorePatterns:
     - private
     - templates
