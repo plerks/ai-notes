@@ -23,3 +23,11 @@ npx quartz build --serve
 markdown 笔记内容要置于 `content/` 文件夹下，本地写笔记可以用 [Obsidian](https://obsidian.md/)。
 
 此时要把 `.git` 文件夹删掉，因为一开始是 clone 的 quartz 官方仓库，不需要那个 commit 记录。
+
+### 网页自动发布
+
+在仓库的 Settings -> Pages -> Build and deployment -> Source 下，选择 **Github Actions** 。
+
+创建 `.github/workflows/deploy.yml` ，内容见[链接](https://quartz.jzhao.xyz/hosting#github-pages) 。
+
+然后直接用 git 提交即可。
